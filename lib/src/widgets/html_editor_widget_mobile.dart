@@ -223,7 +223,6 @@ class _HtmlEditorWidgetMobileState extends State<HtmlEditorWidget> {
                             print(message.message);
                           },
                           onWindowFocus: (controller) async {
-                            FocusManager.instance.primaryFocus?.unfocus();
                             if (widget.htmlEditorOptions.shouldEnsureVisible &&
                                 Scrollable.of(context) != null) {
                               await Scrollable.of(context)!.position
